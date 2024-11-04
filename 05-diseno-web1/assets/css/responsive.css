@@ -1,0 +1,210 @@
+.layout-menu-toggle {
+    display: none;
+}
+@media (max-width: 1490px) {
+    .layout {
+        min-width: auto;
+        width: 85%;
+    }
+}
+@media (max-width: 1320px) {
+    .layout {
+        min-width: auto;
+        width: 89%;
+        margin-left: 3rem;
+    }
+}
+@media (max-width: 1160px) {
+    .layout {
+        min-width: auto;
+        width: 85%;
+        margin-left: 4rem;
+    }
+}
+@media (max-width: 1060px) {
+    body {
+        background-image: none;
+        position: static;
+    }
+    .layout {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        border-radius: 0;
+        grid-template-areas: 'content';
+        grid-template-columns: 100%;
+    }
+    .layout-content {
+        border-radius: 0;
+        background-color: transparent;
+        height: 100%;
+    }
+    .content-page {
+        border-radius: 0;
+        height: 100vh;
+    }
+    .layout-menu {
+        position: static;
+        margin: 3rem 0rem;
+    }
+    .user-info-containerImg {
+        width: 13rem;
+        display: inline-block;
+        margin-top: 3rem;
+    }
+
+    .user-info-name {
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-list{
+        position: static;
+        width: 100%;
+        background-color: var(--color-secondary);
+        box-shadow: none;
+        margin-left: 0;
+        padding: 0;
+        min-height: auto;
+
+    }
+    .menu-link {
+        text-decoration: none;
+        display: block;
+        padding: 1.2rem 0;
+
+    }
+
+    .menu-overlay {
+        position: static;
+        opacity: 0.7;
+        margin-top: 0;
+        padding: 0;
+        box-shadow: none;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    .menu-link-active {
+        opacity: 1;
+    }
+
+    .link-social {
+        margin-top: 0;
+    }
+
+    .user-info-footer {
+        position: static;
+        padding-bottom: 2rem;
+    }
+
+    .menu-icon {
+        display: none;
+        
+    }
+    .menu-toggle{
+        color: white;
+        display: block;
+        position: absolute;
+        top: 25% !important;
+        left: 28% !important;
+        transition: all 300ms ease-in-out;
+    }
+   
+
+    .layout-menu-toggle{
+        display: block;
+        position: absolute;
+        width: 4.8rem;
+        height: 4.8rem;
+        line-height: 4.8rem;
+        text-align: center;
+        background-color: var(--color-secondary);
+        right: 1rem;
+        top: 1rem;
+        font-size: 2.3rem;
+        border-radius: 3rem;
+        color:
+        white;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+        z-index: 9999;
+    }
+    .fa-bars {
+        opacity: 1;
+    }
+    .fa-xmark {
+        opacity: 0;
+    }
+
+    .layout-aside{
+        display: block !important;
+        position: absolute;
+        max-width: 330px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        overflow: auto;
+        transition: all 300ms ease-in-out;
+        z-index: 999;
+
+        margin-right: -100%;
+        opacity: 0;
+    }
+
+    .layout-aside-visible{
+        width: 100%;
+        margin-right: 0;
+        opacity: 1;
+    }
+    .layout-aside-hidden{
+        margin-right: -100%;
+        opacity: 0;
+    }
+}
+@media (max-width: 800px) {
+    .layout {
+        min-width: auto;
+        width: 89%;
+        margin-left: 3rem;
+    }
+}
+@media (max-width: 585px) {
+    .about-personal-info {
+        flex-direction: column;
+    }
+    .personal-info-data{
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+
+    .service-container{
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .service-service {
+        flex-basis: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .resume-right {
+        padding: 0;
+        flex-basis: 100%;
+
+    }
+    .contact-container {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+}
