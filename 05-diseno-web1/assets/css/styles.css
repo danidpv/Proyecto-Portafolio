@@ -169,11 +169,12 @@ img {
 }
 
 .menu-overlay {
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-top: -3rem;
-    opacity: 0;
-    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+    opacity: 10;
+    border-radius: 10px;
+    padding: 0.5rem 0.5rem;
     display: block;
     color: var(--color-principal);
     background-color: var(--color-secondary);
